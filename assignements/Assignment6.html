@@ -1,0 +1,39 @@
+<!-- Create the ‘Get in Touch’ Form for your portfolio which should include the following:
+
+1. Name input section (an input of text type)
+
+2. Email input section (an input of email type)
+
+3. Message input section (a textarea)
+
+4. and a submit button (an input of submit type)
+
+Further, refer to the test cases to understand necessary requirements to submit the problem. -->
+
+<!DOCTYPE html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+
+<h1>Get in Touch</h1>
+<form>
+  <section>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Name" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Email" />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Message"></textarea>
+
+    <input type="submit" value="Send" />
+  </section>
+</form>

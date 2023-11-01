@@ -1,0 +1,39 @@
+<!-- Create an About me Section that contains the person's image, necessary heading, intro, description, and social profile links.
+
+Use the following tags in proper flow:
+1. <section> tag, to hold the entire about me section.
+2. <img> tag with relevant src and alt attribute to add a image.
+3. <h1> and <h3> tag for section heading and person's intro.
+4. <p> tag for a long description.
+5. <a> tags with enclosed <img> tags to have logos (images) of different social profiles as redirectable links.
+
+Further, refer to the test cases to understand necessary requirements to submit the problem. -->
+
+<!DOCTYPE html>
+<!-- Please NOTE that the link to assets (like images) need to be set in global context.
+For example:
+To access an image from assets folder correct way to set src attribute is 
+
+src = 'profile.png'
+
+instead of 
+
+src = './assets/profile.png'
+-->
+<html>
+  <head>
+    <title>About</title>
+  </head>
+  <body>
+    <img src="./assets.profile.png" alt="person-img" />
+    <section>
+      <h1>About Me</h1>
+      <h3>Hello! I'm {PERSON_NAME}</h3>
+      <p>Description Area for About me</p>
+      <a href="logo1.png"><img src="./assets.profile.png" alt="Logo1" /></a>
+      <a href="logo2.png"><img src="./assets.profile.png" alt="Logo2" /></a>
+      <a href="logo3.png"><img src="./assets.profile.png" alt="Logo3" /></a>
+      <a href="logo4.png"><img src="./assets.profile.png" alt="Logo4" /></a>
+    </section>
+  </body>
+</html>
