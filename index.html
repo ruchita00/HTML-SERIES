@@ -11,5 +11,187 @@
     <!-- meta also controls how your data getting render how the browser actually -->
     <!-- understand your document inside of it  -->
   </head>
-  <body></body>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    table {
+      width: 100%;
+    }
+    tbody {
+      background-color: red;
+    }
+    thead {
+      background-color: pink;
+    }
+  </style>
+  <body>
+    <!-- heading tags  -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>
+      Lorem ipsum <span style="color: brown">dolor</span> sit amet consectetur
+      adipisicing elit. Nobis, quaerat modi architecto molestias quis placeat
+      dicta, possimus eum ad, sunt aliquid soluta saepe nostrum voluptates
+      labore provident laudantium vel cupiditate!
+    </p>
+
+    <ol type="I">
+      <li>
+        <ol>
+          <li>home</li>
+          <li>about</li>
+          <li>career</li>
+        </ol>
+      </li>
+      <li>
+        <ul type="circle">
+          <li>Cricket</li>
+          <li>
+            <ul type="circle">
+              <li>Cricket</li>
+              <li>Football</li>
+              <li>Hockey</li>
+              <li>Hockey</li>
+              <li>Hockey</li>
+            </ul>
+          </li>
+          <li>Hockey</li>
+          <li>Hockey</li>
+          <li>Hockey</li>
+        </ul>
+      </li>
+      <li>Hockey</li>
+      <li>Hockey</li>
+      <li>Hockey</li>
+    </ol>
+
+    <ul type="circle">
+      <li>Cricket</li>
+      <li>Football</li>
+      <li>Hockey</li>
+      <li>Hockey</li>
+      <li>Hockey</li>
+    </ul>
+
+    <a href="about.html" target="_blank">About</a>
+    <div>
+      <img width="200" height="200" src="Image.jpg" alt="img" />
+    </div>
+    semantic tag
+    <header></header>
+    <section></section>
+    <footer></footer>
+    <article></article>
+    <nav></nav>
+
+    <header>
+      <img width="50" height="50" src="Image.jpg" alt="image" />
+
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li>Career</li>
+          <li>Join</li>
+        </ul>
+      </nav>
+      <button>Sign In</button>
+      <button>Sign up</button>
+    </header>
+
+    <!-- forms  -->
+
+    <form>
+      <div>
+        <label for="firstname">First Name</label>
+        <input
+          id="firstname"
+          type="text"
+          placeholder="First name"
+          name="firstname"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
+      </div>
+      <div>
+        <input type="email" required placeholder="enter email" name="email" />
+      </div>
+      <div>
+        <input type="radio" value="male" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" value="female" name="gender" id="female" />
+        <label for="male">female</label>
+
+        <input type="radio" value="custom" name="gender" id="custom" />
+        <label for="custom">custom</label>
+      </div>
+
+      <div>
+        <input type="checkbox" value="singing" name="hobby" />
+        <input type="checkbox" value="movies" name="hobby" />
+        <input type="checkbox" value="readinng" name="hobby" />
+      </div>
+      <div>
+        <input type="date" name="dob" />
+      </div>
+
+      <div>
+        <select name="city" id="">
+          <option default value="Delhi">Delhi</option>
+          <option value="Banglore">Banglore</option>
+          <option value="pune">pune</option>
+        </select>
+      </div>
+
+      <button type="submit">Sign up</button>
+    </form>
+
+    <!-- table  -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th colspan="2">Employee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mohit</td>
+          <td rowspan="2">22</td>
+          <td>001</td>
+        </tr>
+        <tr>
+          <td>Mohit</td>
+          <td>22</td>
+          <td>001</td>
+        </tr>
+        <tr>
+          <td>Mohit</td>
+          <td>22</td>
+          <td>001</td>
+        </tr>
+        <tr>
+          <td>Mohit</td>
+          <td>22</td>
+          <td>001</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
